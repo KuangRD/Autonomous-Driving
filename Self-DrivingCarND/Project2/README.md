@@ -15,10 +15,10 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./pic/hist.jpg "Visualization"
+[image1]: ./pic/hist.png "Visualization"
 [image2]: ./pic/bitbug_favicon.jpg "Traffic Sign 1"
 [image3]: ./pic/bitbug_favicon-2.jpg "Traffic Sign 2"
-[image4]: ./pic/bitbug_favicon-3.jpgg "Traffic Sign 3"
+[image4]: ./pic/bitbug_favicon-3.jpg "Traffic Sign 3"
 [image5]: ./pic/bitbug_favicon-4.jpg "Traffic Sign 4"
 [image6]: ./pic/bitbug_favicon-5.jpg "Traffic Sign 5"
 [image7]: ./pic/bitbug_favicon-6.jpg "Traffic Sign 6"
@@ -117,10 +117,25 @@ I use the LeNet at first, as it is easy to make it work. But after a few epochs,
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are six German traffic signs that I found on the web:
 
-![alt text][image2] ![alt text][image3] ![alt text][image4]
-![alt text][image5] ![alt text][image6]
+![alt text][image2] 
+I think the series signs of speed limit is quite simular with each other especially in low resolution situation.
+
+![alt text][image3] 
+As it is one of the speed limit sign, what's more ,one part on the upside of sign have been cut off.
+
+![alt text][image4]
+Part of te sigh has been cut off.  
+
+![alt text][image5]
+There is a mark on the sign, and it just mask part of the sign.
+
+![alt text][image6] 
+There is a mark on the sigh whlie it is a little bit complicated.
+
+![alt text][image7]
+It's one of the speedlimit sign.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -138,7 +153,7 @@ Here are the results of the prediction:
 | Speed Limit(50km/h) | Speed Limit(50km/h)   |
 
 
-The model was able to correctly guess 5 of the 6 traffic signs, which gives an accuracy of 83%.
+The model was able to correctly guess 5 of the 6 traffic signs, which gives an accuracy of 83%. While the accuracy in the original test set is.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
