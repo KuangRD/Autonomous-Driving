@@ -170,7 +170,8 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 | 0.				    | Speed limit (70km/h)    							|
 
 
-For the second image ...
+For the second image 
+
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | 1.         			| No entry   								|
@@ -179,7 +180,8 @@ For the second image ...
 | 0.	      			| Speed limit (50km/h)				 				|
 | 0.				    | Speed limit (60km/h)    							|
 
-For the thrid image ...
+For the thrid image 
+
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | 1.         			| No entry   								|
@@ -188,7 +190,8 @@ For the thrid image ...
 | 0.	      			| Speed limit (50km/h)				 				|
 | 0.				    | Speed limit (26km/h)    							|
 
-For the fourth image ...
+For the fourth image 
+
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | 1.         			| No entry   								|
@@ -197,7 +200,8 @@ For the fourth image ...
 | 0.	      			| Speed limit (50km/h)				 				|
 | 0.				    | Speed limit (60km/h)    							|
 
-For the fifth image ...
+For the fifth image
+
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | 1.         			| No entry   								|
@@ -206,7 +210,8 @@ For the fifth image ...
 | 0.	      			| Speed limit (50km/h)				 				|
 | 0.				    | Speed limit (70km/h)    							|
 
-For the sixth image ...
+For the sixth image 
+
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | 1.         			| No entry   								|
