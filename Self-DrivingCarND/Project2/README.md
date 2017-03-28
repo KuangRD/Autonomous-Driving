@@ -194,7 +194,7 @@ For the fourth image
 
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 1.         			| No entry   								|
+| 1.         			| Roundabout	   								|
 | 0.     				| Speed limit (20km/h)										|
 | 0.					| Speed limit (30km/h)											|
 | 0.	      			| Speed limit (50km/h)				 				|
@@ -204,7 +204,7 @@ For the fifth image
 
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 1.         			| No entry   								|
+| 1.         			| Children crossing   								|
 | 0.     				| Speed limit (20km/h)										|
 | 0.					| Speed limit (30km/h)											|
 | 0.	      			| Speed limit (50km/h)				 				|
@@ -214,7 +214,7 @@ For the sixth image
 
 | Probability         	|     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
-| 1.         			| No entry   								|
+| 1.         			| Speed Limit(50km/h)     								|
 | 0.     				| Speed limit (20km/h)										|
 | 0.					| Speed limit (30km/h)											|
 | 0.	      			| Speed limit (60km/h)				 				|
