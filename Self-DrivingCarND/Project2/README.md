@@ -221,4 +221,4 @@ For the sixth image
 | 0.				    | Speed limit (70km/h)    							|
 
 
-**I think it is seems to be overfit, I am tring to change the Architecture and use more pre-train procession **
+** I think it is seems to be overfit, I am tring to change the Architecture and use more pre-train procession **
