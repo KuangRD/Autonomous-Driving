@@ -1,4 +1,4 @@
-This Folder is used for Udacity Self-driving Car Engineer Nano Degree, I took part in February 2017.
+This Folder is used for Udacity Self-driving Car Engineer Nano Degree I took part in February 2017.
 
 **Projects** are those submitted files for the course.
 
