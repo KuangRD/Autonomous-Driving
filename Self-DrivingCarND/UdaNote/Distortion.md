@@ -8,10 +8,13 @@
 ## Distortion Coefficients and Correction
 
 ![alt test][image3]
+
 图中（x,y）是畸变图像中的一个点，（xcorrect, ycorrect）是（x,y）在正常图像上对应的点。畸变图像的中心通常也是正常图像的中心（xc,yc)。
 
 ### 径向畸变, K1, K2, K3
+
 ![alt test][image4]
+
 >*K3* 反应了镜头径向畸变的主要部分，但是大部分常规镜头的*K3*已经做的很小，可以忽略不计。OpenCV中也可以选择忽略该系数。
 
 ### 切向畸变, P1, P2
