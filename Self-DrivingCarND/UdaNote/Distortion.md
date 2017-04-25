@@ -25,7 +25,9 @@
 
 ## 校准
 OpenCV指令 [cv2.findChessboardCorners()](http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#cv2.findChessboardCorners)和 [cv2.drawChessboardCorners()](http://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#cv2.drawChessboardCorners)
+
 ![alt test][image6]
+
 ```sh
 import numpy as np
 import cv2
