@@ -56,6 +56,28 @@ if ret == True:
     plt.imshow(img)
 
 ```
+Convert2Grey
+读一个系列的图，如img1, img2, img3....
+```sh
+import glob
+images = glob.glob('../some_folder/img*.jpg')
+```
+读RGB图，
+```sh
+gray = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+```
+读视频中的图，(BGR)
+```sh
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+```
+相机校准，给定对象点，图像点和灰度图像的形状//**gray.shape[::-1]**和img.shape[0:2](检索前两位)返回图像尺寸,dist: Distortion Coefficients, mtx: Camera Matrix, rvecs,tvecs: rotation vectors, translation vectors 反应相机在真实世界中的位置
+```sh
+ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
+```
+Undistorting//dst: undistorted image
+```sh
+dst = cv2.undistort(img, mtx, dist, None, mtx)
+```
 
 
 [//]: # (Image References)
