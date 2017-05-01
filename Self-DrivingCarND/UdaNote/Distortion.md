@@ -73,6 +73,8 @@ gray = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 ```sh
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 ```
+#### Tips:
+***Note***: If you read in an image using *matplotlib.image.imread()* you will get an **RGB** image, but if you read it in using OpenCV *cv2.imread()* this will give you a **BGR** image.
 ### 相机校准
 
 相机校准，给定对象点，图像点和灰度图像的形状//**gray.shape[::-1]**和img.shape[0:2](检索前两位)返回图像尺寸,dist: Distortion Coefficients, mtx: Camera Matrix, rvecs,tvecs: rotation vectors, translation vectors 反应相机在真实世界中的位置
@@ -87,9 +89,32 @@ dst = cv2.undistort(img, mtx, dist, None, mtx)
 
 ![alt test][image7]
 
-Perspective Transform透视变换前后效果
+### Perspective Transform
 
+Compute the perspective transform, M, given source and destination points:
+```sh
+M = cv2.getPerspectiveTransform(src, dst)
+```
+Compute the inverse perspective transform:
+```sh
+Minv = cv2.getPerspectiveTransform(dst, src)
+```
+Warp an image using the perspective transform, M:
+```sh
+warped = cv2.warpPerspective(img, M, img_size, flags=cv2.INTER_LINEAR)
+```
+透视变换前后效果
 ![alt test][image8]
+### 校准点的初始化
+```#!/bin/sh
+objpoints = []
+imgpoints = []
+
+objp = np.zeros((6*9,3),np.float32)
+objp[:,:2] = np.mgrid[0:9,0:6].T.reshape(-1,2)
+
+```
+可以通过glob函数往object points和image points中加多个图的corner点,但值得注意的是一些图中Corners显示不全（部分遮盖）.会导致后面出bug，可以通过ret是True还是False来确认．
 
 ###  梯度检测(边缘加测)
 **Sobel Operator** Canny 边缘检测算法的核心部分. *Sx*和*Sy*分别用于X方向和Y方向的梯度检测.维度必须为奇数,最小为3.维度越大,求梯度的面积越大,梯度越平滑
@@ -151,8 +176,6 @@ Lightness&Value: represent different ways to measure the relative lightness or d
 
 ![alt test][image11]
 
-#### Tips:
-***Note***: If you read in an image using *matplotlib.image.imread()* you will get an **RGB** image, but if you read it in using OpenCV *cv2.imread()* this will give you a **BGR** image.
 
 ```sh
 hls = cv2.cvtColor(image, cv2.COLOR_RGB2HLS)
