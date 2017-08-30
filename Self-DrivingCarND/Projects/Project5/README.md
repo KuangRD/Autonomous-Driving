@@ -77,7 +77,7 @@ hist_feat = False # Histogram features on or off
 hog_feat = True # HOG features on or off
 ```
 
-###Sliding Window Search
+### Sliding Window Search
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
