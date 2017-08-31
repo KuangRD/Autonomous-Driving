@@ -41,7 +41,7 @@ I made a data set brief summary as follow:
 * The shape of a traffic sign image is (32,32,3)
 * The number of unique classes/labels in the data set is 43
 
-** From my point of view, the training set is big enough, so we can build a relatively completive CNN to get a higher accuracy. **
+**From my point of view, the training set is big enough, so we can build a relatively completive CNN to get a higher accuracy.**
 
 #### 2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
