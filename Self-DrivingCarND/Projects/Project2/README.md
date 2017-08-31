@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image6]: ./pic/bitbug_favicon-5.jpg "Traffic Sign 5"
 [image7]: ./pic/bitbug_favicon-6.jpg "Traffic Sign 6"
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Writeup / README
