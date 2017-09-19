@@ -50,11 +50,11 @@ Here is an example using the `HLS` color space and HOG parameters of `orientatio
 
 ![alt text][image2]
 
-####2. Explain how you settled on your final choice of HOG parameters.
+#### 2. Explain how you settled on your final choice of HOG parameters.
 
 I use the default parameters in the class.
 
-####3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
+#### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
 I trained a linear SVM using various combinations of features. As I use a sever with 4 TITAN X and 256GB RAM, it didn't spend too much time.
 
@@ -77,7 +77,7 @@ hist_feat = False # Histogram features on or off
 hog_feat = True # HOG features on or off
 ```
 
-###Sliding Window Search
+### Sliding Window Search
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
