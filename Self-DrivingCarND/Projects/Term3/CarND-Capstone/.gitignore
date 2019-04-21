@@ -1,0 +1,10 @@
+*.py[cod]
+
+build
+devel
+
+profile.tmp
+
+archive/
+simulator/
+ros/rosbag
